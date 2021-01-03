@@ -185,3 +185,226 @@ Date:   Sun Jan 3 17:19:44 2021 +0200
 
     added index and command file
 
+
+
+git branch -M master
+git remote add origin https://github.com/mohamedegila/OS_41GitLab2.git
+git push -u origin master
+
+
+ git status
+On branch new-branch
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   index.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        New Text Document.txt
+
+
+git stash
+Saved working directory and index state WIP on new-branch: 48be666 update ccmmand file
+
+
+ git status
+On branch new-branch
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        New Text Document.txt
+
+
+git checkout master
+Switched to branch 'master'
+Your branch is up to date with 'origin/master'.
+
+Al-Qirawan@Mohammedegila MINGW64 /f/ITI Intake41 OSD Track_Alex/12-Version Control Systems/Labs/Lab2/labtest/Lab2 (master)
+$ git merge new-branch
+Updating 48be666..c8bd689
+Fast-forward
+ New Text Document.txt | 0
+ index.html            | 3 +++
+ 2 files changed, 3 insertions(+)
+ create mode 100644 New Text Document.txt
+
+
+
+
+ git checkout -b rebase-test
+Switched to a new branch 'rebase-test'
+
+git add .
+
+git commit -m "commit 1"
+
+git add .
+
+git commit -m "commit 2"
+
+git add .
+
+git commit -m "commit 3"
+
+git add .
+
+git commit -m "commit 4"
+
+
+git checkout master
+
+
+git rebase rebase-branch
+
+after rebase
+
+ git log --graph
+* commit 2070491d241717bf02a1622356aef125b7881849 (HEAD -> master, rebase-test)
+| Author: mohamedegila <mohammedegila@gmail.com>
+| Date:   Sun Jan 3 17:46:54 2021 +0200
+|
+|     commit 4
+|
+* commit 2f94e7c5c24e317e58f18ca03fbba12ea557e894
+| Author: mohamedegila <mohammedegila@gmail.com>
+| Date:   Sun Jan 3 17:46:43 2021 +0200
+|
+|     commit 3
+|
+* commit deda51bdf1ae59f97455ef827146c00573b6c86a
+| Author: mohamedegila <mohammedegila@gmail.com>
+| Date:   Sun Jan 3 17:46:31 2021 +0200
+|
+|     commit 2
+|
+* commit 239d3985a0aae6f10f21b49bde09bfec9c7864d6
+| Author: mohamedegila <mohammedegila@gmail.com>
+| Date:   Sun Jan 3 17:46:20 2021 +0200
+|
+|     commit 1
+|
+* commit c8bd6895060dd1fc188a6f573cdf92bbaac78d4b (origin/master, new-branch)
+| Author: mohamedegila <mohammedegila@gmail.com>
+| Date:   Sun Jan 3 17:41:24 2021 +0200
+|
+|     added index after stash
+|
+* commit cf9be9f210a730449801433286f5aa0e127b75ed
+| Author: mohamedegila <mohammedegila@gmail.com>
+| Date:   Sun Jan 3 17:40:09 2021 +0200
+|
+|     added new text
+|
+* commit 48be66604243cf164ee1c9ed13e9c011c4273192
+| Author: mohamedegila <mohammedegila@gmail.com>
+| Date:   Sun Jan 3 17:26:05 2021 +0200
+|
+|     update ccmmand file
+|
+* commit a0fc78c0ddce3eaa4ab59c3e50049b68bac92e01
+| Author: mohamedegila <mohammedegila@gmail.com>
+| Date:   Sun Jan 3 17:22:42 2021 +0200
+|
+|     fix confliect
+|
+* commit 0c1780a927100a6a2de06ae3a5d333592eed34ed
+| Author: mohamedegila <mohammedegila@gmail.com>
+| Date:   Sun Jan 3 17:21:08 2021 +0200
+|
+|     add h1
+|
+* commit 3fb03a3b5ca139494c83ecc3e0990d5dde5d4f48
+| Author: mohamedegila <mohammedegila@gmail.com>
+| Date:   Sun Jan 3 17:20:23 2021 +0200
+|
+:
+
+
+
+after accept pullreqest
+
+
+git pull
+
+git log
+commit aa69334abcf0d867222489613f60b3dca20524cc (HEAD -> master)
+Merge: 2070491 f2c3826
+Author: mohamedegila <mohammedegila@gmail.com>
+Date:   Sun Jan 3 17:54:34 2021 +0200
+
+    Merge branch 'master' of https://github.com/mohamedegila/OS_41GitLab2
+
+commit f2c3826073e09e210a5e60d18d39fcb6f62fa6d4 (origin/master)
+Merge: c8bd689 2896daf
+Author: mahmoudm4 <76862919+mahmoudm4@users.noreply.github.com>
+Date:   Sun Jan 3 17:52:11 2021 +0200
+
+    Merge pull request #1 from mohamedegila/MahmoudBranch
+
+    Mahmoud Commit
+
+commit 2896dafc3bd41e47f5b85328e23bf2b2bba8518a (origin/MahmoudBranch)
+Author: mahmoudm4 <mahmoudm4895@gmail.com>
+Date:   Sun Jan 3 17:49:09 2021 +0200
+
+    Mahmoud Commit
+
+commit 2070491d241717bf02a1622356aef125b7881849 (rebase-test)
+:...skipping...
+commit aa69334abcf0d867222489613f60b3dca20524cc (HEAD -> master)
+Merge: 2070491 f2c3826
+Author: mohamedegila <mohammedegila@gmail.com>
+Date:   Sun Jan 3 17:54:34 2021 +0200
+
+    Merge branch 'master' of https://github.com/mohamedegila/OS_41GitLab2
+
+commit f2c3826073e09e210a5e60d18d39fcb6f62fa6d4 (origin/master)
+Merge: c8bd689 2896daf
+Author: mahmoudm4 <76862919+mahmoudm4@users.noreply.github.com>
+Date:   Sun Jan 3 17:52:11 2021 +0200
+
+    Merge pull request #1 from mohamedegila/MahmoudBranch
+
+    Mahmoud Commit
+
+commit 2896dafc3bd41e47f5b85328e23bf2b2bba8518a (origin/MahmoudBranch)
+Author: mahmoudm4 <mahmoudm4895@gmail.com>
+Date:   Sun Jan 3 17:49:09 2021 +0200
+
+    Mahmoud Commit
+
+commit 2070491d241717bf02a1622356aef125b7881849 (rebase-test)
+Author: mohamedegila <mohammedegila@gmail.com>
+Date:   Sun Jan 3 17:46:54 2021 +0200
+
+    commit 4
+
+commit 2f94e7c5c24e317e58f18ca03fbba12ea557e894
+Author: mohamedegila <mohammedegila@gmail.com>
+Date:   Sun Jan 3 17:46:43 2021 +0200
+
+    commit 3
+
+commit deda51bdf1ae59f97455ef827146c00573b6c86a
+Author: mohamedegila <mohammedegila@gmail.com>
+Date:   Sun Jan 3 17:46:31 2021 +0200
+
+    commit 2
+
+commit 239d3985a0aae6f10f21b49bde09bfec9c7864d6
+Author: mohamedegila <mohammedegila@gmail.com>
+Date:   Sun Jan 3 17:46:20 2021 +0200
+
+    commit 1
+
+commit c8bd6895060dd1fc188a6f573cdf92bbaac78d4b (new-branch)
+Author: mohamedegila <mohammedegila@gmail.com>
+Date:   Sun Jan 3 17:41:24 2021 +0200
+
+    added index after stash
+
+commit cf9be9f210a730449801433286f5aa0e127b75ed
+Author: mohamedegila <mohammedegila@gmail.com>
+Date:   Sun Jan 3 17:40:09 2021 +0200
+
+    added new text
+
