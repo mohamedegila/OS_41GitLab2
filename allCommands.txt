@@ -65,6 +65,123 @@ Date:   Sun Jan 3 16:30:13 2021 +0200
     index file
 
 
+ git log --graph
+*   commit 9e0778811e6a4037c5cea61dbfedff414fa4e6be (HEAD -> main, origin/main, origin/HEAD)
+|\  Merge: ba6fcff 1c15ea5
+| | Author: Ahmed-Saleh-007 <60320388+Ahmed-Saleh-007@users.noreply.github.com>
+| | Date:   Sun Jan 3 17:04:48 2021 +0200
+| |
+| |     Merge pull request #2 from Ahmed-Saleh-007/feature
+| |
+| |     Mahmoud Commit
+| |
+| * commit 1c15ea507c436df99609bdb04c71578274546ed7 (origin/feature)
+| | Author: mahmoudm4 <mahmoudm4895@gmail.com>
+| | Date:   Sun Jan 3 16:59:16 2021 +0200
+| |
+| |     Mahmoud Commit
+| |
+* |   commit ba6fcffb45c8d8cfc1d74d4632a62950a41a9ab3
+|\ \  Merge: 9942cf4 af6484c
+| |/  Author: Ahmed-Saleh-007 <60320388+Ahmed-Saleh-007@users.noreply.github.com>
+|/|   Date:   Sun Jan 3 17:03:55 2021 +0200
+| |
+| |       Merge pull request #1 from Ahmed-Saleh-007/new-branch
+| |
+| |       added new message from mohammed
+| |
+| * commit af6484c1934e436c214638f3a019d2dd85a8a24b (origin/new-branch, new-branch)
+|/  Author: mohamedegila <mohammedegila@gmail.com>
+|   Date:   Sun Jan 3 16:56:52 2021 +0200
+|
+|       added new message from mohammed
+|
+* commit 9942cf44f3d1e1ec664403a71f360433d0b5920b
+| Author: Ahmed-Saleh-007 <a85851a@gmail.com>
+| Date:   Sun Jan 3 16:46:39 2021 +0200
+|
+|     text file
+|
+* commit b076e8c10123bacbce4916f97ada008758a3dace
+  Author: Ahmed-Saleh-007 <a85851a@gmail.com>
+  Date:   Sun Jan 3 16:30:13 2021 +0200
+
+      index file
+:
+
+
 
 ------------------------------------------------------------------------
+
+ git init
+
+ git status
+ git add .
+
+git commit -m "edit index file"
+
+ git add .
+
+ git commit -m "add h1"
+
+
+
+git log
+commit 0c1780a927100a6a2de06ae3a5d333592eed34ed (HEAD -> master)
+Author: mohamedegila <mohammedegila@gmail.com>
+Date:   Sun Jan 3 17:21:08 2021 +0200
+
+    add h1
+
+commit 3fb03a3b5ca139494c83ecc3e0990d5dde5d4f48
+Author: mohamedegila <mohammedegila@gmail.com>
+Date:   Sun Jan 3 17:20:23 2021 +0200
+
+    edit index file
+
+commit d90d114ebf2252900483f138f6eb1dfc79fb10a0
+Author: mohamedegila <mohammedegila@gmail.com>
+Date:   Sun Jan 3 17:19:44 2021 +0200
+
+    added index and command file
+
+Al-Qirawan@Mohammedegila MINGW64 /f/ITI Intake41 OSD Track_Alex/12-Version Control Systems/Labs/Lab2/labtest/Lab2 (master)
+$ git revert 3fb03a3b5ca139494c83ecc3e0990d5dde5d4f48
+Auto-merging index.html
+CONFLICT (content): Merge conflict in index.html
+error: could not revert 3fb03a3... edit index file
+hint: after resolving the conflicts, mark the corrected paths
+hint: with 'git add <paths>' or 'git rm <paths>'
+hint: and commit the result with 'git commit'
+
+git add .
+
+git commit -m "fix confliect"
+[master a0fc78c] fix confliect
+ 1 file changed, 1 insertion(+)
+
+git log
+commit a0fc78c0ddce3eaa4ab59c3e50049b68bac92e01 (HEAD -> master)
+Author: mohamedegila <mohammedegila@gmail.com>
+Date:   Sun Jan 3 17:22:42 2021 +0200
+
+    fix confliect
+
+commit 0c1780a927100a6a2de06ae3a5d333592eed34ed
+Author: mohamedegila <mohammedegila@gmail.com>
+Date:   Sun Jan 3 17:21:08 2021 +0200
+
+    add h1
+
+commit 3fb03a3b5ca139494c83ecc3e0990d5dde5d4f48
+Author: mohamedegila <mohammedegila@gmail.com>
+Date:   Sun Jan 3 17:20:23 2021 +0200
+
+    edit index file
+
+commit d90d114ebf2252900483f138f6eb1dfc79fb10a0
+Author: mohamedegila <mohammedegila@gmail.com>
+Date:   Sun Jan 3 17:19:44 2021 +0200
+
+    added index and command file
 
