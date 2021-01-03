@@ -1,0 +1,70 @@
+git clone https://github.com/Ahmed-Saleh-007/branch_test.git
+
+cd branch_test/
+
+git branch
+
+ git branch new-branch
+
+ git checkout new-branch
+Switched to branch 'new-branch'
+
+ git add .
+
+
+git commit -m "added new message from mohammed"
+
+
+ git push -u origin new-branch
+
+git checkout main
+
+git pull
+
+git log
+commit 9e0778811e6a4037c5cea61dbfedff414fa4e6be (HEAD -> main, origin/main, origin/HEAD)
+Merge: ba6fcff 1c15ea5
+Author: Ahmed-Saleh-007 <60320388+Ahmed-Saleh-007@users.noreply.github.com>
+Date:   Sun Jan 3 17:04:48 2021 +0200
+
+    Merge pull request #2 from Ahmed-Saleh-007/feature
+
+    Mahmoud Commit
+
+commit ba6fcffb45c8d8cfc1d74d4632a62950a41a9ab3
+Merge: 9942cf4 af6484c
+Author: Ahmed-Saleh-007 <60320388+Ahmed-Saleh-007@users.noreply.github.com>
+Date:   Sun Jan 3 17:03:55 2021 +0200
+
+    Merge pull request #1 from Ahmed-Saleh-007/new-branch
+
+    added new message from mohammed
+
+commit 1c15ea507c436df99609bdb04c71578274546ed7 (origin/feature)
+Author: mahmoudm4 <mahmoudm4895@gmail.com>
+Date:   Sun Jan 3 16:59:16 2021 +0200
+
+    Mahmoud Commit
+
+commit af6484c1934e436c214638f3a019d2dd85a8a24b (origin/new-branch, new-branch)
+Author: mohamedegila <mohammedegila@gmail.com>
+Date:   Sun Jan 3 16:56:52 2021 +0200
+
+    added new message from mohammed
+
+commit 9942cf44f3d1e1ec664403a71f360433d0b5920b
+Author: Ahmed-Saleh-007 <a85851a@gmail.com>
+Date:   Sun Jan 3 16:46:39 2021 +0200
+
+    text file
+
+commit b076e8c10123bacbce4916f97ada008758a3dace
+Author: Ahmed-Saleh-007 <a85851a@gmail.com>
+Date:   Sun Jan 3 16:30:13 2021 +0200
+
+    index file
+
+
+
+------------------------------------------------------------------------
+
